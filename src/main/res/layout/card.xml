@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto" android:layout_height="match_parent"
+     android:layout_width="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/men3"/>
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp">
+
+        <Button
+            android:id="@+id/info_text"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:gravity="clip_horizontal"
+            android:text="TEXT RECOGNIZER"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/u" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp">
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:gravity="clip_horizontal"
+            android:text="TEXT TO SPEECH"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="200dp"
+            android:src="@drawable/h" />
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
